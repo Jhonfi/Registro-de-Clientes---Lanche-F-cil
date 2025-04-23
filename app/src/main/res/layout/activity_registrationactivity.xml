@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#121212"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCadastroDecorator"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/registro_ilustracao"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registre-se"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#1DB954"
+        app:hintTextColor="#1DB954"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#535353"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/buttonFinalizarCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Cadastro"
+        android:backgroundTint="#1DB954"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="14dp"/>
+
+</LinearLayout>
